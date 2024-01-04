@@ -6,14 +6,18 @@ const ProjectsList = () => {
   return (
     <div className="projects-list">
       <div className="projects-list-texts">
-        <h1 className="projects-list-title">Bark Mingle</h1>
+        <h1 className="projects-list-title">My Projects</h1>
         <p className="projects-list-desc">
-        Bark Mingle is Tinder-esque style mobile app where dog owners can set-up playdates
+        My Projects
         </p>
       </div>
       <div className="projects-list-list">
         <Projects />
-
+        <Projects />
+        <Projects />
+        <Projects />
+        <Projects />
+        <Projects />
       </div>
     </div>
   
