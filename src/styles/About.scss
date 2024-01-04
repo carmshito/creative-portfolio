@@ -1,3 +1,5 @@
+@import "_variables";
+
 .about {
   height: 100vh;
   display: flex;
@@ -8,17 +10,28 @@
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
 }
-
 
 .about-right {
   flex: 1;
+}
+
+.about-card.bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #333;
 }
 
 .about-card {
   width: 60%;
   height: 70vh;
   border-radius: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-image {
