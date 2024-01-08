@@ -11,5 +11,13 @@
   background-color: $main-green;
   border: none;
   border-radius: 20px;
-  padding: 10px 25px 10px 25px,
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-button:hover {
+  background-color: $light-green;
 }

@@ -7,7 +7,7 @@ const ProjectNav = () => {
   return (
     <div className="project-nav">
       {projects.map((item) => (
-        <button type="button" className="nav-button">{item.name}</button>
+          <button type="nav-button" className="nav-button">{item.name}</button>
       ))}
     </div>
   )
