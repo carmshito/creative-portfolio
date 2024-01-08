@@ -19,6 +19,11 @@ import FurbendersImg from "../assets/illustrations/furbenders.png";
 import LynnImg from "../assets/illustrations/lynn.png";
 import MaddyImg from "../assets/illustrations/maddy.png";
 import MotherImg from "../assets/illustrations/mother.png";
+import KobeImg from "../assets/illustrations/kobe.png";
+import WianeImg from "../assets/illustrations/wiane.png";
+import JessImg from "../assets/illustrations/jess-yuzu.png";
+import MegImg from "../assets/illustrations/meg.png";
+import GeraldDaniImg from "../assets/illustrations/gerald-dani.png";
 
 
 const Projects = () => {
@@ -55,6 +60,18 @@ const Projects = () => {
   const illustrations = [
     {
       id: 1,
+      img: GeraldDaniImg,
+    },
+    {
+      id: 1,
+      img: MegImg,
+    },
+    {
+      id: 1,
+      img: JessImg,
+    },
+    {
+      id: 1,
       img: BenjiImg
     },
     {
@@ -71,15 +88,23 @@ const Projects = () => {
     },
     {
       id: 5,
-      img: MaddyImg
+      img: WianeImg
     },
     {
       id: 6,
-      img: MotherImg
+      img: MaddyImg
     },
     {
       id: 7,
       img: ChareneImg
+    },
+    {
+      id: 8,
+      img: KobeImg,
+    },
+    {
+      id: 9,
+      img: MotherImg,
     },
   ]
   return (
