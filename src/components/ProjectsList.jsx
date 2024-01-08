@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/ProjectsList.scss";
-import Projects from "./Projects";
+import Project from "./Project";
+import { projects } from "../data";
+import ProjectNav from "./ProjectNav";
 
 const ProjectsList = () => {
   return (
@@ -11,13 +13,14 @@ const ProjectsList = () => {
         My Projects
         </p>
       </div>
+      <div>
+        <ProjectNav />
+      </div>
       <div className="projects-list-list">
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
-        <Projects />
+        {projects.map((item) => (
+          <Project key={item.id} link={item.link} img={item.img} name={item.name}/>
+        ))}
+    
       </div>
     </div>
   
