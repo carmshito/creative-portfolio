@@ -1,2 +1,11 @@
 @import "_variables";
 
+.icon {
+  font-size: 40px;
+  color: $main-green;
+}
+
+.icon:hover {
+  color: $light-green;
+  transition: 0.3s ease-in-out;
+}
