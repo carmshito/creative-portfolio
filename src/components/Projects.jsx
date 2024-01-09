@@ -38,6 +38,7 @@ const Projects = () => {
                         return (
                           <ProjectCard
                             key={index}
+                            eventKey="first"
                             {...project}
                           />
                         )
@@ -52,6 +53,7 @@ const Projects = () => {
                         return (
                           <ProjectCard 
                             key={index}
+                            eventKey="second"
                             {...project}
                           />
                         )
@@ -66,6 +68,7 @@ const Projects = () => {
                         return (
                           <ProjectCard
                             key={index}
+                            eventKey="third"
                             {...project}
                           />
                         )

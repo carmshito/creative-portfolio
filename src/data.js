@@ -2,8 +2,8 @@
 import BarkMingleImg from "./assets/projects/bm-landing-screen.png";
 
 ////////////// web img ////////////////
-import FunsiesImg from "./assets/projects/funsies-dropdown.png";
-import JungleImg from "./assets/projects/jungle-rails-landing.png";
+import FunsiesImg from "./assets/projects/funsies.png";
+import JungleImg from "./assets/projects/jungle-rails.png";
 import PhotoLabsImg from "./assets/projects/photolabs.png";
 
 ////////////// illustration img ////////////////
