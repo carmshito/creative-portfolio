@@ -3,7 +3,68 @@
 .contact {
   height: 100vh;
 }
+
 .contact-bg {
   background-color: $main-green;
   height: 100%;
+}
+
+.contact-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+
+.contact-title {
+  margin: 50px 0px 0px 50px;
+}
+
+.contact-desc {
+  margin: 10px 60px 0px 50px;
+}
+
+.contact-right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 60%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: $main-green;
+  margin: 10px 0px;
+  outline: none;
+}
+
+input::placeholder {
+  color: black;
+}
+
+textarea {
+  border: none;
+  width: 80%;
+  border-radius: 10px;
+  margin-right: 50px;
+  padding: 10px;
+  outline: none;
+}
+
+button {
+  background-color: $light-blue;
+  color: $main-green;
+  letter-spacing: 1.5px;
+  border: none;
+  padding: 7px 25px 7px 25px;
+  border-radius: 30px;
+  margin: 10px 0px;
 }
