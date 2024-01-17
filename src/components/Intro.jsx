@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Intro.scss";
 import MyImage from "../assets/pfp.png"
+import { useTypingText } from "../hooks/useTypingText";
 
 const Intro = () => {
+
+  // useTypingText params: useTypingText(words, keySpeed, maxPauseAmount);
+  const { word } = useTypingText(
+    ["Full Stack Web Developer", "Designer", "Illustrator", "Creative"],
+    100,
+    40
+  );
+
   return (
     <div className="i">
       <div className="i-left">
@@ -11,10 +20,7 @@ const Intro = () => {
           <h1 className="i-name">Carmelia Shito</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Full Stack Web Developer</div>
-              <div className="i-title-item">Designer</div>
-              <div className="i-title-item">Illustrator</div>
-              <div className="i-title-item">Creative</div>
+              <span className="i-title-item">{word}</span>
             </div>
           </div>
           <p className="i-description">

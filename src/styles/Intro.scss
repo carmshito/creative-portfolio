@@ -33,32 +33,8 @@
   font-size: 90px;
 }
 
-.i-title {
-  height: 90px;
-  overflow: hidden;
-}
-
-.i-title-wrapper {
-  height: 100%;
-  animation: move 10s ease-in-out infinite alternate;
-}
-
-@keyframes move {
-  25% {
-    transform: translateY(-90px);
-  }
-  50% {
-    transform: translateY(-180px);
-  }
-  75% {
-    transform: translateY(-270px);
-  }
-  100% {
-    transform: translateY(-360px);
-  }
-}
-
 .i-title-item {
+  margin: 0px 10px 10px 0px;
   height: 90px;
   font-size: 50px;
   font-weight: bold;
