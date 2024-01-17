@@ -3,6 +3,8 @@ import "../styles/Footer.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -16,7 +18,9 @@ const Footer = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/carmelia-shito/"><FaLinkedin className="icon"/></a>
               <a href="https://github.com/carmshito"><FaGithubSquare className="icon"/></a>
+              <a href="https://www.instagram.com/carmscreates"><FaInstagramSquare className="icon"/></a>
             </div>
+            <p>Copyright 2023. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
