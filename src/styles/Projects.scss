@@ -26,9 +26,15 @@
   border-radius: 50px;
   background-color: $main-green;
   overflow: hidden;
+
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
+
+  &:hover {
+    background-color: $light-green;
+    transition: all 1s ease;
+  }
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -101,7 +107,7 @@
 }
 
 .web-img:hover {
-  transform: translateY(-90%);
+  transform: translateY(-50%);
 }
 
 .project-text {
@@ -119,9 +125,26 @@
   border: none;
   padding: 7px 25px 7px 25px;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
+  
+  .icon {
+    margin-left: 5px;
+    color: white;
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: $light-green;
+    transition: all 1s ease;
+  }
+
+  &:hover .icon {
+    color: white;
+  }
+
 }
 
-.main-button:hover {
-  background-color: $light-green;
-  transition: all 1s ease;
+a {
+  text-decoration: none;
 }

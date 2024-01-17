@@ -2,8 +2,6 @@ import React, { useRef, useState } from "react";
 import "../styles/Contact.scss";
 import { Row } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
-import { toHaveFormValues } from "@testing-library/jest-dom/matchers";
-
 
 const Contact = () => {
 
@@ -17,7 +15,7 @@ const Contact = () => {
     message: "",
   })
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     emailjs.sendForm('service_6xwll9m', 'template_n1nn5us', formRef.current, 'bWnMhGgo6fM3GHf6I')
       .then((result) => {
@@ -46,7 +44,7 @@ const Contact = () => {
             <p className="contact-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusantium repellat sed quae, id vero possimus obcaecati. Repudiandae quis dolore reiciendis eum culpa. Consequuntur quasi omnis esse eum, eligendi libero.</p>
           </div>
           <div className="contact-right">
-            <form ref={formRef} onSubmit={handleSubmit}>
+            <form ref={formRef} onSubmit={handleSubmit} method="POST">
               <input type="text" value={formValues.firstName} onChange={(e) => setFormValues({ ...formValues, firstName: e.target.value})} placeholder="First Name" name="user_first_name" />
               <input type="text" value={formValues.lastName} onChange={(e) => setFormValues({ ...formValues, lastName: e.target.value})} placeholder="Last Name" name="user_last_name" />
               <input type="text" value={formValues.email} onChange={(e) => setFormValues({ ...formValues, email: e.target.value})} placeholder="Email" name="user_email" />

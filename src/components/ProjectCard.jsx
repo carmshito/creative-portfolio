@@ -1,6 +1,8 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import "../styles/Projects.scss";
+import { FaGithub } from "react-icons/fa";
+
 
 const ProjectCard = ({ name, img, link, eventKey }) => {
   return (
@@ -18,7 +20,9 @@ const ProjectCard = ({ name, img, link, eventKey }) => {
               <span></span>
             </div>
             <div className="project-link-button">
-              <button className="main-button">view code</button>
+              <a href={link}>
+                <button className="main-button">view code <FaGithub className="icon"/></button>
+              </a>
             </div>
           </div>
         ) : null}
